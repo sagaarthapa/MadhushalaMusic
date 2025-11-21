@@ -1,10 +1,10 @@
 "use client";
 import { Layout } from "@/layouts/Layout";
 import { coursesList } from "@/data/courses";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
-export default function StudentRegistrations() {
+function StudentRegistrations() {
   const searchParams = useSearchParams();
   const courseIdParam = searchParams.get("courseId");
 
@@ -17,7 +17,7 @@ export default function StudentRegistrations() {
         setSelectedCourses([courseId]);
       }
     }
-  }, [courseIdParam]);
+  }, [courseIdParam, selectedCourses]);
 
   const handleCourseToggle = (courseId) => {
     setSelectedCourses(prev =>
@@ -47,7 +47,7 @@ export default function StudentRegistrations() {
                   </h3>
                   <p className="td_fs_18 td_heading_color td_opacity_7 td_mb_40">
                     Join Madhushala Music and embark on your journey to master music and dance.
-                    Select the courses you're interested in and we'll get back to you.
+                    Select the courses you&apos;re interested in and we&apos;ll get back to you.
                   </p>
                   <h3 className="td_fs_32 td_medium td_mb_30">Your Information</h3>
 
@@ -153,5 +153,13 @@ export default function StudentRegistrations() {
         <div className="td_height_120 td_height_lg_80" />
       </section>
     </Layout>
+  );
+}
+
+export default function Page() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <StudentRegistrations />
+    </Suspense>
   );
 }

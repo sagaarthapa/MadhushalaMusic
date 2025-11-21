@@ -36,7 +36,7 @@ export default function InstructorRegistrations() {
                   </h3>
                   <p className="td_fs_18 td_heading_color td_opacity_7 td_mb_40">
                     Join our team of expert instructors at Madhushala Music. Share your passion for music and dance
-                    with the next generation of artists. We're looking for experienced professionals who can inspire and teach.
+                    with the next generation of artists. We&apos;re looking for experienced professionals who can inspire and teach.
                   </p>
 
                   <h3 className="td_fs_32 td_medium td_mb_30">Your Information</h3>

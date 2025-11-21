@@ -18,7 +18,7 @@ export const FounderOne = () => {
                         >
                             <div className="td_section_heading td_style_1 td_mb_30">
                                 <p className="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">
-                                    Founder's Message
+                                    Founder&apos;s Message
                                 </p>
                                 <h2 className="td_section_title td_fs_48 mb-0">
                                     Meet Our Founder: Ram Karki

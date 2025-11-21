@@ -27,7 +27,7 @@ export const HeroOne = () => {
               <span>Discover Your Rhythm</span> at Madhushala Music
             </h1>
             <p className="td_hero_subtitle td_fs_18 td_white_color td_opacity_7 td_mb_30">
-              Join Nepal's premier institution for music and dance education.
+              Join Nepal&apos;s premier institution for music and dance education.
               Experience world-class training with expert instructors in a
               vibrant, creative community.
             </p>
