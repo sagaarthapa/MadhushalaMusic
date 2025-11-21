@@ -1,0 +1,9 @@
+{
+  "/page": "app/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/course-details/[id]/page": "app/course-details/[id]/page.js",
+  "/team-members/page": "app/team-members/page.js",
+  "/instructor-registrations/page": "app/instructor-registrations/page.js",
+  "/courses-grid-view/page": "app/courses-grid-view/page.js"
+}

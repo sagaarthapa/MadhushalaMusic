@@ -1,0 +1,202 @@
+/* Tab button active state for course section */
+.td_tab_btn.active {
+  background: var(--madhushala-gradient) !important;
+  color: #fff !important;
+  border: none;
+}
+/*--------------------------------------------------------------
+** Madhushala Music Custom Theme
+** Linear Gradient: #A28080 (0%) → #6F5858 (50%) → #3C3030 (100%)
+----------------------------------------------------------------*/
+
+:root {
+  /* Madhushala Gradient Colors */
+  --madhushala-light: #A28080;
+  --madhushala-mid: #6F5858;
+  --madhushala-dark: #3C3030;
+
+  /* Override default accent color with gradient */
+  --accent-color: #6F5858;
+  /* Fallback for non-gradient contexts */
+  --madhushala-gradient: linear-gradient(135deg, #A28080 0%, #6F5858 50%, #3C3030 100%);
+  --madhushala-gradient-horizontal: linear-gradient(90deg, #A28080 0%, #6F5858 50%, #3C3030 100%);
+  --madhushala-gradient-vertical: linear-gradient(180deg, #A28080 0%, #6F5858 50%, #3C3030 100%);
+}
+
+/* Apply gradient to primary buttons */
+.td_btn.td_style_1,
+.td_btn.td_style_2 {
+  background: var(--madhushala-gradient) !important;
+  border: none;
+}
+
+.td_btn.td_style_1:hover,
+.td_btn.td_style_2:hover {
+  background: var(--madhushala-gradient-horizontal) !important;
+  opacity: 0.9;
+}
+
+/* Hero sections - gradient overlay on banner images */
+/* Note: Hero sections use inline background-image styles for banners.
+   The gradient is applied via ::before pseudo-element to overlay the image */
+.td_hero.td_style_1::before,
+.td_hero.td_style_2::before,
+.td_hero.td_style_3::before,
+.td_hero.td_style_4::before,
+.td_hero.td_style_5::before,
+.td_hero.td_style_6::before,
+.td_hero.td_style_7::before,
+.td_hero.td_style_8::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(162, 128, 128, 0.7) 0%, rgba(111, 88, 88, 0.8) 50%, rgba(60, 48, 48, 0.85) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.td_hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Section backgrounds with gradient */
+.td_accent_bg {
+  background: var(--madhushala-gradient) !important;
+}
+
+/* Header with gradient on scroll */
+.td_sticky_header.td_sticky_active {
+  background: linear-gradient(90deg, rgba(162, 128, 128, 0.95) 0%, rgba(111, 88, 88, 0.95) 50%, rgba(60, 48, 48, 0.95) 100%) !important;
+}
+
+/* Footer with gradient */
+.td_footer {
+  background: var(--madhushala-gradient-vertical) !important;
+}
+
+/* Accent text color */
+.td_accent_color,
+a:hover {
+  color: var(--madhushala-mid) !important;
+}
+
+/* Icon boxes and features with gradient */
+.td_iconbox.td_style_1 .td_iconbox_icon,
+.td_iconbox.td_style_2 .td_iconbox_icon,
+.td_iconbox.td_style_3 .td_iconbox_icon {
+  background: var(--madhushala-gradient);
+}
+
+/* Course cards hover effect */
+.td_card:hover .td_card_thumb::before {
+  background: linear-gradient(180deg, rgba(162, 128, 128, 0.8) 0%, rgba(60, 48, 48, 0.9) 100%);
+}
+
+/* Testimonial section */
+.td_testimonial_1_wrap {
+  background: var(--madhushala-gradient) !important;
+}
+
+/* CTA sections */
+.td_cta.td_style_1,
+.td_cta.td_style_2,
+.td_cta.td_style_3 {
+  background: var(--madhushala-gradient) !important;
+}
+
+/* Pricing tables - active/featured */
+.td_pricing_table.td_active {
+  background: var(--madhushala-gradient);
+}
+
+/* Progress bars */
+.td_progressbar .td_progressbar_in {
+  background: var(--madhushala-gradient-horizontal);
+}
+
+/* Links and navigation active states */
+.td_nav>li.active>a,
+.td_nav>li>a:hover {
+  color: var(--madhushala-mid);
+}
+
+/* Pagination active */
+.pagination .page-item.active .page-link {
+  background: var(--madhushala-gradient);
+  border-color: var(--madhushala-mid);
+}
+
+/* Form focus states */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--madhushala-mid) !important;
+}
+
+/* Social icons */
+.td_social_btns a:hover {
+  background: var(--madhushala-gradient);
+}
+
+/* Category badges */
+.td_category_badge {
+  background: var(--madhushala-gradient);
+}
+
+/* Overlay gradients for images */
+.td_overlay_gradient::before {
+  background: linear-gradient(180deg, rgba(162, 128, 128, 0.3) 0%, rgba(60, 48, 48, 0.8) 100%);
+}
+
+/* Preloader */
+.td_preloader::before {
+  background: var(--madhushala-gradient) !important;
+  opacity: 0.3;
+}
+
+.td_preloader_in span {
+  background: var(--madhushala-mid) !important;
+}
+
+/* Section dividers */
+.td_section_divider {
+  background: var(--madhushala-gradient-horizontal);
+  height: 3px;
+}
+
+/* Blockquote border */
+blockquote {
+  border-left: 4px solid var(--madhushala-mid);
+}
+
+/* Table headers */
+table thead {
+  background: var(--madhushala-gradient);
+  color: white;
+}
+
+/* Badges and labels */
+.badge-primary,
+.label-primary {
+  background: var(--madhushala-gradient) !important;
+}
+
+/* Scrollbar (for webkit browsers) */
+::-webkit-scrollbar-thumb {
+  background: var(--madhushala-gradient);
+}
+
+/* Selection color */
+::selection {
+  background: var(--madhushala-mid);
+  color: white;
+}
+
+::-moz-selection {
+  background: var(--madhushala-mid);
+  color: white;
+}
